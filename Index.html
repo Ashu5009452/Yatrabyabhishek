@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yatra by Abhishek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: #1b1f3b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      background: #2e355d;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animated Hero Section */
+    .hero {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #00f2fe, #4facfe, #00c9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: zoomInOut 4s ease-in-out infinite;
+      text-shadow: 0 0 10px rgba(0,255,255,0.3);
+    }
+
+    @keyframes zoomInOut {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Content Section */
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #1b1f3b;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #1b1f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Yatra by Abhishek</h1>
+    <p>Explore the sacred destinations of Uttarakhand</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Travel Tips</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <h1>Discover Divine Trails</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Kedarnath Section -->
+    <div class="card">
+      <h2>Kedarnath – Lord Shiva's Abode</h2>
+      <p>Kedarnath is one of the most revered pilgrimage destinations of Lord Shiva nestled in the Himalayas. The journey involves a scenic and spiritual trek, attracting lakhs of devotees every year.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/h5GcL850-yE?autoplay=1&mute=1" title="Kedarnath Yatra" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Badrinath Section -->
+    <div class="card">
+      <h2>Badrinath – Sacred Land of Vishnu</h2>
+      <p>Badrinath, located on the banks of Alaknanda River, is dedicated to Lord Vishnu. It's one of the Char Dhams and a must-visit destination for spiritual seekers and nature lovers alike.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/tJVJbBXNUrc?autoplay=1&mute=1" title="Badrinath Travel" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Tungnath Section -->
+    <div class="card">
+      <h2>Tungnath – Highest Shiva Temple</h2>
+      <p>Tungnath is the highest Shiva temple in the world and part of the Panch Kedar pilgrimage. The trail to Tungnath offers stunning views of the Himalayas and leads further to Chandrashila peak.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/us6V9AkJVBU?autoplay=1&mute=1" title="Tungnath Trek" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Yatra by Abhishek | Designed with ❤️ in India
+  </footer>
+
+</body>
+</html>
